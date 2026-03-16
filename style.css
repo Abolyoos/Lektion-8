@@ -1,248 +1,152 @@
-  * {
-      box-sizing: border-box;
-  }
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-  body {
-      background-color: green;
+body {
+    background-color: lightgray;
+    color: darkslategray;
+}
 
-  }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    background-color: navy;
+    padding: 10px 20px;
+  padding-top: 20px;
+    flex-wrap: wrap;
+   
+}
 
-  nav ul {
-      list-style-type: none;
-      display: flex;
-      gap: 20px;
-  }
+nav li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: deepskyblue;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    display: inline-block;
+}
 
-  nav li {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+nav li a:hover {
+    background-color: royalblue;
+    transform: scale(1.1);
+}
 
-  }
+img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid deepskyblue;
+    background-color: white;
+}
 
+h1, .Intro {
+    background-color: gold;
+    color: navy;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
-  nav li a {
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 10px;
-      display: inline-block;
-      transition: transform 0.6s ease, background-color 0.3s ease;
-      border-radius: 10px;
-      border-style: solid;
-      border-color: black;
+dl {
+    background-color: gainsboro;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
 
-  }
+dt {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    color: navy;
+}
 
-  nav li a:hover {
-      background-color: skyblue;
-      transform: scale(1.1);
-      border-radius: 10px;
-      border-style: solid;
-      border-color: rgb(255, 255, 255);
-  }
+dd {
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    color: darkslategray;
+    line-height: 1.6;
+}
 
-  img {
-      width: 50px;
-      height: 50px;
-      padding: 7.5px;
-      border-radius: 20px;
-      border-style: solid;
-      border-color: black;
-      background-color: rgb(255, 255, 0);
-  }
+dd ol, dd ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
 
-  dt {
-      justify-content: space-between;
-      align-items: flex-start;
-      margin: 20px 0;
-      font-size: larger;
-      color: white;
-  }
+.Info {
+    background-color: lightcyan;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+}
 
-  dd {
-      border-radius: 10px;
-      border-color: black;
-      border-style: solid;
-      padding: 5px;
-      box-shadow: 10px 15px 10px;
-      background-color: beige;
+.SäkerhetsBody p {
+    background-color: aliceblue;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
 
-  }
+.Links {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
 
-  dl {
-      margin-right: 25%;
-      margin-left: 25%;
-      background-color: darkgreen;
-      padding: 20px;
-      border-radius: 5px;
-      border-color: darkgreen;
-      
-  }
-
-  section {
-      display: flex;
-      gap: 50px;
-  }
-
-  h1 {
-      background-color: rgb(255, 255, 0);
-      border-style: solid;
-      border-radius: 20px;
-      border-color: black;
-      padding: 5px;
-      width: fit-content;
-      box-shadow: 10px 15px 10px;
-  }
-
-  .Intro {
-      background-color: rgb(255, 255, 0);
-      border-style: solid;
-      border-radius: 20px;
-      border-color: black;
-      padding: 5px;
-      width: fit-content;
-      height: fit-content;
-      box-shadow: 10px 15px 10px;
-  }
-
-  h4 {
-      border-style: solid;
-      border-radius: 20px;
-      background-color: beige;
-      border-color: gold;
-      background-color: transparent;
-      margin-right: 10%;
-      margin-left: 10%;
-  }
-
-  .Info {
-      background-color: white;
-      border-style: solid;
-      border-radius: 20px;
-      background-color: beige;
-      border-color: gold;
-      background-color: transparent;
-      margin-right: 10%;
-      margin-left: 10%;
-      padding: 10px;
-      width: fit-content;
-      height: 130px;
-      border-width: 7.5px;
-
-  }
-
-
-
-  .Links {
-      border-radius: 15px;
-      border-style: solid;
-      border-color: black;
-      padding: 20px;
-      padding-left: 25px;
-      background-color: white;
-  }
-
-  .SäkerhetsBody p {
-      padding: 15px;
-      background-color: aliceblue;
-      border-radius: 10px;
-  }
-
-  .hrMellan {
-      /*background-color: skyblue;*/
-      padding: 20px;
-      border-radius: 20px;
-  }
-
-  .mobilSkärm {
-      display: none;
-  }
-
-  /* Tablet */
-  @media (max-width:900px) {
-
-      section {
-          flex-direction: column;
-      }
-
-  }
-
-  /* Mobil */
-  /* Mobilanpassning för skärmar under 600px */
 @media (max-width: 600px) {
-
-    /* Navigation */
     nav ul {
         flex-direction: column;
         gap: 5px;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav li {
-        width: 100%;
     }
 
     nav li a {
-        display: block;
         text-align: center;
-        padding: 8px;
         font-size: 14px;
+        padding: 8px 10px;
     }
 
-    /* Logo */
-    img {
-        width: 40px;
-        height: 40px;
-        padding: 5px;
-    }
-
-    /* Huvudrubrik och intro */
     h1, .Intro {
         font-size: 18px;
-        padding: 10px;
         width: 95%;
-        box-shadow: 5px 5px 5px;
     }
 
-    /* DL-listor (frågor/svar) */
     dl {
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: 10px;
-    }
-
-    dt {
-        font-size: 16px;
-        margin: 15px 0 5px 0;
+        width: 95%;
     }
 
     dd {
         font-size: 14px;
         width: 100%;
-        margin-left: 0;
-        padding: 8px;
-        box-shadow: 3px 3px 5px;
     }
 
-    /* Info-boxar */
-    .Info {
-        width: 90%;
-        height: auto;
-        padding: 10px;
+    .Info, .Links {
+        width: 95%;
     }
 
-    .Links {
-        width: 90%;
-        padding: 15px;
-        font-size: 14px;
+    section {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    /* Säkerhetssektion */
-    .SäkerhetsBody p {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    /* Hantera display för mobil/data text */
     .dataSkärm {
         display: none;
     }
@@ -252,9 +156,8 @@
         font-size: 14px;
     }
 
-    /* Allmän layoutjustering */
-    section {
-        flex-direction: column;
-        gap: 20px;
+    dd ol, dd ul {
+        margin-left: 15px;
+        padding-left: 15px;
     }
 }
